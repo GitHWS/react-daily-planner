@@ -12,13 +12,17 @@ const Text = styled.p`
     css`
       font-size: 16px;
       font-weight: 700;
-      text-align: center;
+    `}
+    ${(props) =>
+    props.type === "content" &&
+    css`
+      font-size: 18px;
     `};
 `;
 
 Text.defaultProps = {
   type: "default",
-  color: "var(—color-black)",
+  color: "black",
 };
 
 export { Text };
