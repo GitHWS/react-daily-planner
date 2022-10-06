@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { useSelectedItem } from "../../hooks/useSelectedItem";
 import DailyWeatherView from "./DailyWeatherView";
 
 const DailyWeather = () => {
-  const [selectedWeather, setSelectedWeather] = useState("");
-
-  const handleChange = (e) => {
-    console.log(e.target.value);
-    setSelectedWeather(e.target.value);
-  };
+  const { handleChange } = useSelectedItem();
 
   return <DailyWeatherView handleChange={handleChange} />;
 };
