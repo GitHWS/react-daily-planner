@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelectedItem } from "../../hooks/useSelectedItem";
+import DailyMoodView from "./DailyMoodView";
 
 const DailyMood = () => {
-  return <div>DailyMood</div>;
+  const { handleChange } = useSelectedItem();
+  return <DailyMoodView handleChange={handleChange} />;
 };
 
 export default DailyMood;
