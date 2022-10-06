@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { AxiosTodoService } from "../api/axios/AxiosTodoService";
 
-import { Text } from "../components/viewcontainer/Text";
+// import { Text } from "../components/viewcontainer/Text";
 import dayjs from "dayjs";
 import DailyDate from "../components/dailydatecontainer/DailyDate";
 import DailyWeather from "../components/dailyweathercontainer/DailyWeather";
