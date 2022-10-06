@@ -1,0 +1,31 @@
+{
+  "dailyplan": [
+    {
+      "id": 1,
+      "weather": "bright",
+      "mood": "good",
+      "quote": "열심히 살자!!",
+      "goal": "하루 프로젝트 끝내기!!!",
+      "todos": [
+        {
+          "todo": "UI끝내기",
+          "isDone": false
+        },
+        {
+          "todo": "Font 크기 설정",
+          "isDone": false
+        },
+        {
+          "todo": "아이콘",
+          "isDone": false
+        }
+      ],
+      "selfscore": 80,
+      "time": 600,
+      "dateTimes": {
+        "createdDateTime": "2022-07-23T17:40:00+09:00",
+        "doneDateTime": "2022-07-23T18:45:00+09:00"
+      }
+    }
+  ]
+}

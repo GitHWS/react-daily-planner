@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { AxiosTodoService } from "../api/axios/AxiosTodoService";
 
-import { Text } from "../components/Text";
+import { Text } from "../components/viewcontainer/Text";
 
 const Main = () => {
+  const [item, setItem] = useState([]);
+
+  useEffect(() => {
+    const todoService = new AxiosTodoService();
+    todoService.getTodoItems().then((data) => setItem(data));
+  }, []);
+
+  useEffect(() => {
+    console.log(item);
+  }, [item]);
+
   return (
     <MainContainer>
       <TitleContentBox>
